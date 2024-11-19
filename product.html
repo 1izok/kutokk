@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="res/log1.png" type="image/png" />
+    <link href="./product.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Куток</title>
+  </head>
+  <body>
+    <div class="menu">
+      <a href="main.html"><img src="res/log.svg" /></a>
+      <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <div class="nav" id="nav">
+          <ul>
+            <li>
+              <span><a href="about.html">О нас</a></span>
+            </li>
+            <li>
+              <span><a href="product.html">Продукция</a></span>
+            </li>
+            <li>
+              <span><a href="review.html">Отзывы</a></span>
+            </li>
+            <li>
+              <span><a href="contact.html">Контакты</a></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-bg" id="menu-bg"></div>
+      <div class="search">
+        <a href="#" id="openModal1"><img src="res/search.svg" /></a>
+        <a href="#" id="openModal2" data-title="Корзина пуста"
+          ><img src="res/cart.svg"
+        /></a>
+      </div>
+      <!-- Модальное окно1 -->
+      <div id="myModal1" class="modal1">
+        <div class="modal-content1">
+          <input type="text" placeholder="Поиск..." />
+        </div>
+      </div>
+    </div>
+    <div class="product">
+      <div class="product_menu">
+        <div class="product_menu2">
+          <div id="navig" class="pkat">
+            <button class="pasbut"><img src="res/veg.svg" /></button
+            ><span>Овощи</span>
+          </div>
+          <div id="navig" class="akat">
+            <button class="actbut"><img src="res/cheese.svg" /></button
+            ><span>Сыры</span>
+          </div>
+          <div id="navig" class="pkat">
+            <button class="pasbut"><img src="res/honey.svg" /></button
+            ><span>Мёд</span>
+          </div>
+          <div id="navig" class="pkat">
+            <button class="pasbut"><img src="res/tea.svg" /></button
+            ><span>Травы</span>
+          </div>
+          <div id="navig" class="pkat">
+            <button class="pasbut"><img src="res/bread.svg" /></button
+            ><span>Хлеб</span>
+          </div>
+          <div id="navig" class="pkat">
+            <button class="pasbut"><img src="res/cons.svg" /></button
+            ><span>Консервация</span>
+          </div>
+        </div>
+        <div class="filso">
+          <div class="filso2">
+            <img src="res/filt.svg" /> <span id="tech">Фильтр</span>
+          </div>
+          <div class="filso2">
+            <img src="res/sort.svg" /><span id="tech">Сортировка</span>
+          </div>
+        </div>
+      </div>
+      <div class="all">
+        <div class="all_123">
+          <div class="theall_1">
+            <a href="individ.html"><div class="all_1">
+              <div class="pic_1"></div>
+              <div class="info_1">
+                <span id="sub">Морбье</span>
+                <span id="navig">Полумягкий французский сыр</span>
+                <span id="maint"><b>7 руб.</b></span>
+              </div>
+            </div></a>
+            <button id="but" onclick="openpage()">Подробнее</button>
+          </div>
+          <div class="theall_1">
+            <div class="all_1">
+              <div class="pic_2"></div>
+              <div class="info_1">
+                <span id="sub">Качотта</span>
+                <span id="navig">Итальянский полумягкий сыр</span>
+                <span id="maint"><b>4.5 руб.</b></span>
+              </div>
+            </div>
+            <button id="but">Подробнее</button>
+          </div>
+          <div class="theall_1">
+            <div class="all_1">
+              <div class="pic_3"></div>
+              <div class="info_1">
+                <span id="sub">Лейденский</span>
+                <span id="navig">Полутвердый сыр с добавлением тмина</span>
+                <span id="maint"><b>5 руб.</b></span>
+              </div>
+            </div>
+            <button id="but">Подробнее</button>
+          </div>
+          <div class="theall_1">
+            <div class="all_1">
+              <div class="pic_4"></div>
+              <div class="info_1">
+                <span id="sub">Чеддер</span>
+                <span id="navig">Твердый сыр английского происхождения</span>
+                <span id="maint"><b>8 руб.</b></span>
+              </div>
+            </div>
+            <button id="but">Подробнее</button>
+          </div>
+          <div class="theall_1">
+            <div class="all_1">
+              <div class="pic_5"></div>
+              <div class="info_1">
+                <span id="sub">Качокавалло</span>
+                <span id="navig">Вытяжной полутвердый сыр</span>
+                <span id="maint"><b>5 руб.</b></span>
+              </div>
+            </div>
+            <button id="but">Подробнее</button>
+          </div>
+          <div class="theall_1">
+            <div class="all_1">
+              <div class="pic_6"></div>
+              <div class="info_1">
+                <span id="sub">Буррата</span>
+                <span id="navig">Мягкий сыр из сливок и коровьего молока</span>
+                <span id="maint"><b>11 руб.</b></span>
+              </div>
+            </div>
+            <button id="but">Подробнее</button>
+          </div>
+          <div class="theall_1">
+            <div class="all_1">
+              <div class="pic_7"></div>
+              <div class="info_1">
+                <span id="sub">Рикотта</span>
+                <span id="navig">Сывороточный мягкий сыр</span>
+                <span id="maint"><b>2 руб.</b></span>
+              </div>
+            </div>
+            <button id="but">Подробнее</button>
+          </div>
+          <div class="theall_1">
+            <div class="all_1">
+              <div class="pic_8"></div>
+              <div class="info_1">
+                <span id="sub">Адыгейский</span>
+                <span id="navig">Мягкий сыр с кисломолочным вкусом</span>
+                <span id="maint"><b>2.5 руб.</b></span>
+              </div>
+            </div>
+            <button id="but">Подробнее</button>
+          </div>
+          <div class="theall_1">
+            <div class="all_1" id="vinnone">
+              <div class="pic_9"></div>
+              <div class="info_1">
+                <span id="sub">Красный Виндзор</span>
+                <span id="navig"
+                  >Полутвердый сыр с добавлением красного вина</span
+                >
+                <span id="maint"><b>8 руб.</b></span>
+              </div>
+            </div>
+            <button id="but">Подробнее</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="five">
+      <a href="product.html"><img src="res/flog.svg" class="flog" /></a>
+      <div class="allfoot">
+        <div class="f_info">
+          <span id="fnavig"> info@kutok.by </span>
+          <span id="fnavig"> © 2024 ОАО "Куток" </span>
+          <span id="fnavig" class="fspan"
+            >Все права защищены. Перепечатка и любое использование материалов
+            возможно только при наличии ссылки на первоисточник</span
+          >
+        </div>
+        <div class="sm">
+          <img src="res/inst.svg" /> <img src="res/tt.svg" />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="main.js"></script>
+    <script src="burger.js"></script>
+  </body>
+</html>

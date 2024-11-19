@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="res/log1.png" type="image/png" />
+    <link href="./indbr.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Куток</title>
+  </head>
+  <body>
+    <div class="menu">
+      <a href="indbr.html"><img src="res/log.svg" /></a>
+      <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <div class="nav" id="nav">
+          <ul>
+            <li>
+              <span><a href="about.html">О нас</a></span>
+            </li>
+            <li>
+              <span><a href="product.html">Продукция</a></span>
+            </li>
+            <li>
+              <span><a href="review.html">Отзывы</a></span>
+            </li>
+            <li>
+              <span><a href="contact.html">Контакты</a></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-bg" id="menu-bg"></div>
+      <div class="search">
+        <a href="#" id="openModal1"><img src="res/search.svg" /></a>
+        <a href="#" id="openModal2" data-title="Корзина пуста"
+          ><img src="res/cart.svg"
+        /></a>
+      </div>
+      <!-- Модальное окно1 -->
+      <div id="myModal1" class="modal1">
+        <div class="modal-content1">
+          <input type="text" placeholder="Поиск..." />
+        </div>
+      </div>
+    </div>
+
+    <div class="id_nav">
+      <a href="main.html">
+        <img src="res/point.svg" class="point" />
+        <span>Вернуться назад</span></a
+      >
+      <a href="product.html"><img src="res/mpoint.svg" class="mpoint" /></a>
+    </div>
+    <div class="ind_info">
+      <div class="ind_pic">
+        <button><img src="res/right.svg" /></button>
+      </div>
+      <div class="ind_text">
+        <span id="sub" class="indh">Пикантный хлеб с оливками</span>
+        <span id="indtext"
+          >Идеальная хрустящая корочка, пикантный вкус и свежая зелень. Отлично
+          подходит для закусок, бутербродов и в качестве гарнира. Не упустите
+          возможность насладиться его уникальным вкусом и ароматом! <br /><br />
+          <b>Состав:</b> пшеничная мука, вода, оливки, , соль, дрожжи, приправы.
+          <br />
+          <b>Пищ. ценность в 100г продукта:</b>  белок- 8г., жиры- 5г.,
+          углеводы- 45г. <br />
+          <b>Энергетическая ценность в 100г продукта:</b> 60 ккал.
+          <br />
+          <b>Массовая доля жира:</b> 5%. <br />Срок годности <b>10 суток</b> при
+          температуре от 0 до + 6 °С. <br /><br /><b
+            >Цена указана за 100гр. продукта.</b
+          ></span
+        >
+        <div class="price">
+          <span id="sub">2 руб.</span>
+          <button class="openModal" id="but">Купить</button>
+        </div>
+      </div>
+    </div>
+    <div class="three">
+      <span id="header">Смотрите также</span>
+      <div class="slider">
+        <button><img src="res/left.svg" /></button>
+        <div class="animal1"></div>
+        <div class="animal2"></div>
+        <div class="animal3"></div>
+        <div class="animal4"></div>
+        <button><img src="res/right.svg" /></button>
+      </div>
+    </div>
+    <div class="five">
+      <a href="indbr.html"><img src="res/flog.svg" class="flog" /></a>
+      <div class="allfoot">
+        <div class="f_info">
+          <span id="fnavig"> info@kutok.by </span>
+          <span id="fnavig"> © 2024 ОАО "Куток" </span>
+          <span id="fnavig" class="fspan"
+            >Все права защищены. Перепечатка и любое использование материалов
+            возможно только при наличии ссылки на первоисточник</span
+          >
+        </div>
+        <div class="sm">
+          <img src="res/inst.svg" /> <img src="res/tt.svg" />
+        </div>
+      </div>
+    </div>
+    <!-- модалка -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <span id="header">Ваш заказ</span>
+        <div class="m_order">
+          <div class="m_pic"></div>
+          <div class="m_info">
+            <span id="sub">Хлеб с оливками </span>
+            <div class="amount">
+              <img src="res/min.svg" /> <span id="maint">1</span
+              ><img src="res/plus.svg" />
+            </div>
+            <div class="pr_close">
+              <span id="maint">2 руб.</span>
+              <img src="res/close.svg" />
+            </div>
+          </div>
+        </div>
+        <span class="final_pr" id="sub">Сумма заказа: 2 руб.</span>
+        <div class="person">
+          <span id="maint">Ваше имя</span>
+          <input type="text" id="name" placeholder="ФИО" class="m_name" />
+        </div>
+        <div class="person">
+          <span id="maint">Ваш Email</span>
+          <input type="email" id="email" placeholder="email" class="m_name" />
+        </div>
+        <div class="person">
+          <span id="maint">Ваш контактный номер</span>
+          <input type="tel" id="pnum" placeholder="+375" class="m_name" />
+        </div>
+        <div class="person">
+          <span id="maint">Адрес доставки</span>
+          <input type="text" id="adress" placeholder="Адрес" class="m_name" />
+        </div>
+        <div class="m_com">
+          <div class="com_info">
+            <span id="maint">Комментарии к заказу</span>
+            <span id="navig"
+              >После оформления заказа мы свяжемся с Вами, чтобы согласовать
+              доставку и итоговую сумму заказа. Оплата может производиться
+              наличными или с помощью терминала безналичной оплаты при получении
+              заказа.</span
+            >
+          </div>
+          <textarea
+            name="dream"
+            placeholder="Ваши пожелания к заказу"
+            class="placeholder"
+          ></textarea>
+        </div>
+        <button id="but">Отправить</button>
+      </div>
+    </div>
+    <script src="ind.js"></script>
+    <script src="main.js"></script>
+    <script src="burger.js"></script>
+  </body>
+</html>

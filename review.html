@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="res/log1.png" type="image/png" />
+    <link href="./review.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Куток</title>
+  </head>
+  <body>
+    <div class="menu">
+      <a href="main.html"><img src="res/log.svg" /></a>
+       <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <div class="nav" id="nav">
+          <ul>
+            <li>
+              <span><a href="about.html">О нас</a></span>
+            </li>
+            <li>
+              <span><a href="product.html">Продукция</a></span>
+            </li>
+            <li>
+              <span><a href="review.html">Отзывы</a></span>
+            </li>
+            <li>
+              <span><a href="contact.html">Контакты</a></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-bg" id="menu-bg"></div>
+      <div class="search">
+        <a href="#" id="openModal1"><img src="res/search.svg" /></a>
+        <a href="#" id="openModal2" data-title="Корзина пуста"
+          ><img src="res/cart.svg"
+        /></a>
+      </div>
+      <!-- Модальное окно1 -->
+      <div id="myModal1" class="modal1">
+        <div class="modal-content1">
+          <input type="text" placeholder="Поиск..." />
+        </div>
+      </div>
+    </div>
+    <div class="onen">
+      <div class="review">
+        <div class="r_1">
+          <div class="allprofile">
+            <div class="profile">
+              <div class="pic_1"></div>
+              <div class="info_1">
+                <span id="rev">Александр_ЗОЖ</span>
+                <span id="l_rev">Чай с лавандой и мятой</span>
+              </div>
+            </div>
+            <span id="tech">12 февраля 2024</span>
+          </div>
+          <span id="rindtext"
+            >Ваши свежие травяные чаи - это настоящее открытие для меня! Я
+            заказал ваш травяной чай с лавандой и мятой, и он просто очаровывает
+            своим ароматом и вкусом. Каждая заваренная чашка вашего чая
+            наполняет меня ароматом и чувством умиротворения. Я просто в
+            восторге от сочетания натуральных трав и тщательно отобранных
+            ингредиентов. После тяжелого дня нет ничего лучше, чем насладиться
+            чашечкой вашего чая, ощущая, как напряжение улетучивается, а
+            вдохновение приходит.</span
+          >
+        </div>
+        <div class="r_1">
+          <div class="allprofile">
+            <div class="profile">
+              <div class="pic_4"></div>
+              <div class="info_1">
+                <span id="rev">Наташка</span>
+                <span id="l_rev">Пикантный оливковый хлеб</span>
+              </div>
+            </div>
+            <span id="tech">23 марта 2024</span>
+          </div>
+          <span id="rindtext"
+            >Этот хлеб с оливками - просто находка! Каждый кусочек насыщен
+            вкусом сочных оливок, а его аромат просто завораживает. Я заказала
+            его вместе с вашими маринованными огурцами и не могла наесться. Он
+            стал отличным дополнением к моим завтракам и перекусам. Очень
+            рекомендую!</span
+          >
+        </div>
+        <div class="r_1">
+          <div class="allprofile">
+            <div class="profile">
+              <div class="pic_2"></div>
+              <div class="info_1">
+                <span id="rev">Ира_гурман</span>
+                <spafn id="l_rev">Козий сыр с травами</spafn>
+              </div>
+            </div>
+            <span id="tech">06 марта 2024</span>
+          </div>
+          <span id="rindtext"
+            >Никогда не думала, что могу наслаждаться сыром так сильно! Ваш
+            козий сыр - просто удивительный! Такой нежный и ароматный, каждый
+            кусочек открывает новые вкусовые нотки. Я заказала несколько сортов,
+            но особенно полюбила мягкий козий сыр с травами. Он отлично
+            сочетается с вином и вызывает самые яркие вкусовые ощущения.</span
+          >
+        </div>
+        <div class="r_1">
+          <div class="allprofile">
+            <div class="profile">
+              <div class="pic_3"></div>
+              <div class="info_1">
+                <span id="rev">Михаил</span>
+                <span id="l_rev">Липовый мёд</span>
+              </div>
+            </div>
+            <span id="tech">13 февраля 2024</span>
+          </div>
+          <span id="rindtext"
+            >Ваш липовый мед - настоящее удовольствие! Он такой натуральный и
+            ароматный, что трудно поверить, что это мед из этого мира. Я заказал
+            несколько банок для всей семьи, и уже не могу представить наши
+            завтраки без него. Дети просто обожают его на завтрак, а жена
+            использовала его в приготовлении десертов - результат превзошел все
+            мои ожидания. Искренне благодарен за этот шедевр вкуса!</span
+          >
+        </div>
+      </div>
+      <button id="but">Оставить отзыв</button>
+    </div>
+  
+  <div class="five">
+      <a href="review.html"><img src="res/flog.svg" class="flog" /></a>
+      <div class="allfoot">
+        <div class="f_info">
+          <span id="fnavig"> info@kutok.by </span>
+          <span id="fnavig"> © 2024 ОАО "Куток" </span>
+          <span id="fnavig" class="fspan"
+            >Все права защищены. Перепечатка и любое использование материалов
+            возможно только при наличии ссылки на первоисточник</span
+          >
+        </div>
+        <div class="sm">
+          <img src="res/inst.svg" /> <img src="res/tt.svg" />
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <span id="header">Поделитесь вашим мнением</span>
+        <div class="person">
+          <span id="maint">Ваше имя</span>
+          <input type="text" id="name" placeholder="ФИО" class="m_name" />
+        </div>
+        <div class="m_com">
+          <span id="maint">Комментарий</span>
+          <textarea
+            name="dream"
+            placeholder="Поделитесь впечатлениями"
+            class="placeholder"
+          ></textarea>
+          <div class="m_pic">
+            <img src="res/img.svg" />
+            <span id="tech">Прикрепить изображение</span>
+          </div>
+        </div>
+        <button id="but">Отправить</button>
+      </div>
+    </div>
+
+    <script src="rev.js"></script>
+    <script src="main.js"></script>
+    <script src="burger.js"></script>
+  </body>
+</html>

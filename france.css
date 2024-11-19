@@ -1,0 +1,21 @@
+.france {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+  border: 2px solid black;
+  width: 500px;
+  margin-left: 400px;
+  margin-top: 50px;
+}
+.f1 {
+  align-self: stretch;
+  background-color: blue;
+}
+.f2 {
+  align-self: stretch;
+  background-color: white;
+}
+.f3 {
+  align-self: stretch;
+  background-color: red;
+}

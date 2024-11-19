@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="res/log1.png" type="image/png" />
+    <link href="./contact.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Куток</title>
+  </head>
+  <body>
+    <div class="menu">
+      <a href="main.html"><img src="res/log.svg" /></a>
+      <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <div class="nav" id="nav">
+          <ul>
+            <li>
+              <span><a href="about.html">О нас</a></span>
+            </li>
+            <li>
+              <span><a href="product.html">Продукция</a></span>
+            </li>
+            <li>
+              <span><a href="review.html">Отзывы</a></span>
+            </li>
+            <li>
+              <span><a href="contact.html">Контакты</a></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-bg" id="menu-bg"></div>
+      <div class="search">
+        <a href="#" id="openModal1"><img src="res/search.svg" /></a>
+        <a href="#" id="openModal2" data-title="Корзина пуста"
+          ><img src="res/cart.svg"
+        /></a>
+      </div>
+      <!-- Модальное окно1 -->
+      <div id="myModal1" class="modal1">
+        <div class="modal-content1">
+          <input type="text" placeholder="Поиск..." />
+        </div>
+      </div>
+    </div>
+    <div class="two">
+      <div style="position: relative; overflow: hidden">
+        <a
+          href="https://yandex.by/maps?utm_medium=mapframe&utm_source=maps"
+          style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+          >Яндекс Карты</a
+        ><a
+          href="https://yandex.by/maps/geo/2124670301/?ll=25.921331%2C54.543072&utm_medium=mapframe&utm_source=maps&z=12.63"
+          style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+          >Деревня Ступковщина — Яндекс Карты</a
+        ><iframe
+          src="https://yandex.by/map-widget/v1/?ll=25.921331%2C54.543072&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoyMTI0NjcwMzAxEqIB0JHQtdC70LDRgNGD0YHRjCwg0JPRgNC-0LTQt9C10L3RgdC60LDRjyDQstC-0LHQu9Cw0YHRhtGMLCDQkNGI0LzRj9C90YHQutGWINGA0LDRkdC9LCDQk9GA0L7QtNC30ZbQvdGB0LrRliDRgdC10LvRjNGB0LDQstC10YIsINCy0ZHRgdC60LAg0KHRgtGD0L_QutC-0Z7RiNGH0YvQvdCwIgoNEBXPQRVYJ1pC&z=12.63"
+          width="560"
+          height="454"
+          frameborder="1"
+          allowfullscreen="true"
+          style="position: relative"
+        ></iframe>
+      </div>
+      <div class="map_info">
+        <span id="sub">Свяжитесь с нами!</span>
+        <div class="info_all">
+          <div class="info_t">
+            <span id="maint"
+              ><span><b>Телефон для заказа:</b></span> <br />
+              +375447606861</span
+            >
+            <div class="icons">
+              <img src="res/tg.svg" />
+              <img src="res/viber.svg" />
+            </div>
+          </div>
+          <span id="maint"
+            ><span><b>Почта:</b> </span> <br />info@kutok.by</span
+          >
+          <span id="maint"
+            ><span><b>Адрес:</b> </span><br />
+            330100, Гродненская область, Ошмянский район, деревня Ступковщина,
+            дом 1</span
+          >
+          <span id="maint"
+            ><span><b>Режим работы:</b> </span><br />
+            9:00 - 19:00 <br />
+            без выходных</span
+          >
+        </div>
+      </div>
+    </div>
+    <div class="three">
+      <span id="header">Условия заказа</span>
+      <div class="cond">
+        <div class="pic1">
+          <img src="res/order.svg" />
+          <div class="info1">
+            <span id="sub">Примем заказ</span>
+            <span id="maint"
+              >Мы принимаем заказы кажый день с 9:00 до 15:00</span
+            >
+          </div>
+        </div>
+        <div class="pic1">
+          <img src="res/order2.svg" />
+          <div class="info1">
+            <span id="sub">Свяжемся с вами</span>
+            <span id="maint"
+              >После получения заказа мы позвоним, чтобы уточнить детали и
+              согласовать итоговую сумму заказа.</span
+            >
+          </div>
+        </div>
+        <div class="pic1">
+          <img src="res/order3.svg" />
+          <div class="info1">
+            <span id="sub">Доставим курьером</span>
+            <span id="maint"
+              >Наша служба доставки привезёт заказ по указанному адресу.</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="five">
+      <a href="contact.html"><img src="res/flog.svg" class="flog" /></a>
+      <div class="allfoot">
+        <div class="f_info">
+          <span id="fnavig"> info@kutok.by </span>
+          <span id="fnavig"> © 2024 ОАО "Куток" </span>
+          <span id="fnavig" class="fspan"
+            >Все права защищены. Перепечатка и любое использование материалов
+            возможно только при наличии ссылки на первоисточник</span
+          >
+        </div>
+        <div class="sm">
+          <img src="res/inst.svg" /> <img src="res/tt.svg" />
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="burger.js"></script>
+  </body>
+</html>

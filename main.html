@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="res/log1.png" type="image/png" />
+    <link href="./main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Куток</title>
+  </head>
+  <body>
+    <div class="menu">
+      <a href="main.html"><img src="res/log.svg" /></a>
+      <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <div class="nav" id="nav">
+          <ul>
+            <li>
+              <span><a href="about.html">О нас</a></span>
+            </li> 
+            <li>
+              <span><a href="product.html">Продукция</a></span>
+            </li>
+            <li>
+              <span><a href="review.html">Отзывы</a></span>
+            </li>
+            <li>
+              <span><a href="contact.html">Контакты</a></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-bg" id="menu-bg"></div>
+      <div class="search">
+        <a href="#" id="openModal1"><img src="res/search.svg" /></a>
+        <a href="#" id="openModal2" data-title="Корзина пуста"
+          ><img src="res/cart.svg"
+        /></a>
+      </div>
+
+      <!-- Модальное окно1 -->
+      <div id="myModal1" class="modal1">
+        <div class="modal-content1">
+          <input type="text" placeholder="Поиск..." />
+        </div>
+      </div>
+    </div>
+    <div class="one">
+      <div></div>
+      <span id="header" class="h_1">
+        Натуральные продукты с любовью от нашей фермы!</span
+      >
+    </div>
+    <div class="two">
+      <span class="h_2" id="header">Сезонная новинка</span>
+      <div class="season">
+        <div class="bread"></div>
+        <div class="br_info">
+          <span id="sub">Пикантный хлеб с оливками</span>
+          <span id="maint">
+            <b>Пикантный хлеб</b> с оливками доступен только этой весной!
+            <br />
+            <br />
+            <b>Идеальная</b> хрустящая корочка, пикантный вкус и свежая зелень.
+            Отлично подходит для закусок, бутербродов и в качестве гарнира.
+            <br />
+            <br />
+            <b>Не упустите возможность </b>насладиться его уникальным вкусом и
+            ароматом!</span
+          >
+        </div>
+      </div>
+      <button onclick="window.location.href = 'indbr.html';" id="but">
+        Подробнее
+      </button>
+    </div>
+    <div class="three">
+      <span id="header">Наши преимущества:</span>
+      <div class="main_prem">
+        <div class="eco">
+          <img src="res/path282235-h2u.svg" class="prem_svg" />
+          <span id="sub">Натуральность и качество</span>
+          <span id="maint">
+            <b>На нашей ферме</b> мы выращиваем все продукты с любовью и заботой
+            о природе, не используя вредные химические удобрения или пестициды.
+            <br />
+            <br />
+            <b>Это гарантирует</b>, что наши продукты натуральные и безопасные
+            для вашего здоровья.
+          </span>
+        </div>
+        <div class="eco">
+          <img src="res/path322236-qjd.svg" class="prem_svg" />
+          <span id="sub">Прозрачность производства</span>
+          <span id="maint">
+            <b>Наша ферма</b> гордится прозрачным производством продукции, и мы
+            рады показать вам, как выращиваются и производятся наши продукты.
+            <br />
+            <br />
+            <b>Мы</b> уверены в качестве наших продуктов, и готовы поделиться
+            каждым этапом их создания с вами.
+          </span>
+        </div>
+        <div class="eco">
+          <img src="res/path302233-ner.svg" class="prem_svg" />
+          <span id="sub">Экологичность</span>
+          <span id="maint">
+            <b>Мы</b> бережно относимся к окружающей среде. Нашим приоритетом
+            является минимальное воздействие на экосистему.
+            <br />
+            <br />
+            <b>Выбирая</b> нашу ферму, вы поддерживаете экологически чистое
+            производство.
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="four">
+      <span id="rheader">Будьте всегда в курсе</span>
+      <span id="rmaint">
+        Введите ваш e-mail, чтобы узнавать о новинках первыми.
+      </span>
+      <div class="mail">
+        <input type="text" name="email" placeholder="email address" required />
+        <button>
+          <span>подписаться</span>
+        </button>
+      </div>
+    </div>
+    <div class="five">
+      <a href="main.html"><img src="res/flog.svg" class="flog" /></a>
+      <div class="allfoot">
+        <div class="f_info">
+          <span id="fnavig"> info@kutok.by </span>
+          <span id="fnavig"> © 2024 ОАО "Куток" </span>
+          <span id="fnavig" class="fspan"
+            >Все права защищены. Перепечатка и любое использование материалов
+            возможно только при наличии ссылки на первоисточник</span
+          >
+        </div>
+        <div class="sm">
+          <img src="res/inst.svg" /> <img src="res/tt.svg" />
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="burger.js"></script>
+  </body>
+</html>

@@ -1,0 +1,579 @@
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  margin: 0px;
+}
+#header {
+  font-size: 26px;
+  font-weight: 700;
+  color: #001a23;
+}
+#rheader {
+  font-size: 26px;
+  font-weight: 700;
+  color: #faf4d3;
+}
+#sub {
+  font-weight: 700;
+  font-size: 20px;
+  color: #001a23;
+}
+#but {
+  cursor: pointer;
+  border: 1px solid #d64933;
+  border-radius: 25px;
+  padding: 10px 64px;
+  font-size: 16px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  background-color: #faf4d3;
+  color: #d64933;
+}
+#but:hover {
+  background-color: #d64933;
+  color: #faf4d3;
+}
+#but:active {
+  color: #001a23;
+}
+#maint {
+  font-size: 16px;
+  font-weight: 500;
+  color: #001a23;
+}
+#rmaint {
+  font-size: 16px;
+  font-weight: 500;
+  color: #faf4d3;
+}
+#tech {
+  font-size: 10px;
+  font-weight: 400;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #001a23;
+}
+#navig {
+  font-size: 14px;
+  font-weight: 400;
+  color: #001a23;
+}
+#fnavig {
+  font-size: 14px;
+  font-weight: 400;
+  color: #faf4d3;
+}
+
+.one {
+  margin-top: -5px;
+}
+.menu {
+  display: flex;
+  margin: -75px 0px 0px 0px;
+  padding: 5px 140px 0px 140px;
+  align-items: center;
+  height: 74px;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff48;
+}
+.nav {
+  display: flex;
+  margin: 0px 138px 0px 300px;
+  justify-content: space-around;
+  gap: 40px;
+}
+.nav li {
+  list-style: none;
+}
+.nav span {
+  font-size: 14px;
+  font-style: Medium;
+  font-weight: 500;
+}
+.nav ul {
+  display: flex;
+  gap: 40px;
+  padding: 0px;
+}
+.burger {
+  display: none;
+}
+.nav a {
+  text-decoration: none;
+}
+.search {
+  display: flex;
+  gap: 40px;
+}
+
+.modal1 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+.modal-content1 {
+  position: absolute;
+  top: 11%;
+  left: 87%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 5px;
+}
+.modal-content1 input {
+  background-color: #faf4d300;
+  border: 0.1px solid #001a23;
+  padding: 5px;
+  width: 120px;
+}
+.modal-content1 input:focus {
+  color: #212529;
+  border-color: #bdbdbd82;
+  outline: 0;
+  box-shadow: 0 0 0.5em #d64933;
+}
+::placeholder {
+  color: #001a23;
+}
+#openModal2 {
+  display: inline-block;
+  position: relative;
+}
+#openModal2:hover::after {
+  content: attr(data-title);
+  position: absolute; /* Абсолютное позиционирование */
+  left: 80%;
+  top: 80%; /* Положение подсказки */
+  z-index: 1; /* Отображаем подсказку поверх других элементов */
+  background: #faf4d3; /* Полупрозрачный цвет фона */
+  font-size: 10px;
+  font-weight: 400;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #001a23;
+  padding: 5px; /* Поля */
+  border: 0.1px solid #001a23; /* Параметры рамки */
+  border-radius: 35px;
+  width: 90px;
+}
+.search img:hover {
+  -webkit-filter: sepia(1) hue-rotate(15deg) saturate(80);
+  filter: sepia(1) hue-rotate(15deg) saturate(80) brightness(2);
+}
+.nav a:link,
+:visited {
+  color: #001a23;
+}
+.nav a:hover {
+  color: #d64933;
+}
+
+.one {
+  margin: 0px;
+  width: 100%;
+  padding-top: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+  background-color: #faf4d3;
+  margin-top: -5px;
+}
+
+.us {
+  padding: 0px 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+  text-align: center;
+}
+.us_info {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.us_info span {
+  line-height: 22px;
+  width: 360px;
+  align-self: center;
+  text-align: left;
+}
+.us_cow {
+  width: 760px;
+  height: 480px;
+  background-image: url(res/we1.jpg);
+  background-size: cover;
+  border-radius: 35px;
+}
+
+.two {
+  padding: 80px 140px;
+  background-color: #faf4d3;
+}
+.farm {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-bottom: 140px;
+}
+.farm_pic {
+  width: 660px;
+  height: 440px;
+  background-image: url(res/we2.jpg);
+  background-size: cover;
+  background-position: 0% 40%;
+  border-radius: 35px;
+}
+.farm_pic2 {
+  width: 660px;
+  height: 440px;
+  background-image: url(res/we3.jpg);
+  background-size: cover;
+  background-position: 0% 50%;
+  border-radius: 35px;
+}
+.farm_info {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+.farm_info2 {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 40px;
+  align-self: center;
+}
+#header,
+#sub {
+  text-align: center;
+  display: block;
+}
+
+.three {
+  padding: 40px 60px 80px 60px;
+  background-color: #668f80;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.three span{
+  align-self: center;
+}
+.slider {
+  display: flex;
+  gap: 40px;
+}
+.animal1 {
+  width: 260px;
+  height: 260px;
+  background-image: url(res/sl1.jpg);
+  background-size: cover;
+  border-radius: 35px;
+}
+.animal2 {
+  width: 260px;
+  height: 260px;
+  background-image: url(res/sl2.jpg);
+  background-size: cover;
+  background-position: 40% 0%;
+  border-radius: 35px;
+}
+.animal3 {
+  width: 260px;
+  height: 260px;
+  background-image: url(res/sl3.jpg);
+  background-size: cover;
+  border-radius: 35px;
+}
+.animal4 {
+  width: 260px;
+  height: 260px;
+  background-image: url(res/sl4.jpg);
+  background-size: cover;
+  background-position: 20% 0%;
+  border-radius: 35px;
+}
+.slider button {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  padding: 12px 13px 12px 13px;
+  border: none;
+  align-self: center;
+  cursor: pointer;
+  background-color: #faf4d3;
+}
+
+.five {
+  padding: 80px 140px;
+  background-color: #001a23;
+  display: flex;
+  justify-content: space-between;
+  gap: 140px;
+}
+.allfoot {
+  display: flex;
+  gap: 100px;
+}
+.f_info {
+  color: #faf4d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  line-height: 30px;
+  align-self: center;
+}
+.sm {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.sm img {
+  cursor: pointer;
+}
+.sm img:hover {
+  filter: sepia(1) hue-rotate(305deg) saturate(90) brightness(1);
+}
+.flog {
+  height: 103px;
+}
+
+#searchField {
+  display: none; /* Изначально скрыто */
+}
+
+@media (max-width: 430px) {
+  .menu {
+    padding: 10px 20px 0px 20px;
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .search {
+    display: none;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  #menu {
+    z-index: 2;
+  }
+  .menu a{
+    z-index: 5;
+  }
+  .nav {
+    display: inline;
+    margin: 0px;
+  }
+  #menu-bar {
+    width: 35px;
+    height: 30px;
+    padding-top: 35px;
+    margin: 0px 20px 20px 380px;
+    cursor: pointer;
+  }
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: #001a23;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  .bar:active {
+    background-color: #d64933;
+  }
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  #bar3 {
+    transform: translateY(4px);
+  }
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+  }
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+    text-align: right;
+    padding: 0 20px 0 300px;
+  }
+  .nav li {
+    list-style: none;
+    padding: 10px 0;
+  }
+  .nav li a {
+    text-decoration: none;
+  }
+  .menu-bg,
+  #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 560px;
+    background: radial-gradient(circle, #d64933, #faf4d3);
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+  .change {
+    display: block;
+  }
+  .change .bar {
+    background-color: #001a23;
+  }
+  .change .bar:active {
+    background-color: #d64933;
+  }
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+  .change #bar2 {
+    opacity: 0;
+  }
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+  .change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%, -30%);
+  }
+
+  .one {
+    padding-top: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .us {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: center;
+  }
+  .us_info {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .us_info span {
+    width: 390px;
+  }
+  .us_cow {
+    width: 390px;
+    height: 246px;
+  }
+
+  .two {
+    padding: 60px 20px;
+    background-color: #faf4d3;
+  }
+  .farm {
+    gap: 30px;
+    padding-bottom: 60px;
+  }
+  .farm_pic {
+    width: 390px;
+    height: 260px;
+  }
+  .farm_pic2 {
+    width: 390px;
+    height: 260px;
+  }
+  .farm_info {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #mfarm-info {
+    flex-direction: column-reverse;
+  }
+  .farm_info2 {
+    width: 390px;
+    gap: 20px;
+  }
+  #rheader {
+    text-align: center;
+    display: block;
+  }
+  #sub {
+    text-align: left;
+    display: block;
+  }
+  .three {
+    padding: 40px 20px 60px 20px;
+    gap: 30px;
+  }
+  .slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+  }
+  .animal1,
+  .animal2,
+  .animal3,
+  .animal4 {
+    flex: 0 0 auto;
+  }
+  .slider button {
+    display: none;
+  }
+  .five {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .five a {
+    width: 169px;
+    height: 67px;
+  }
+  .allfoot {
+    display: flex;
+    gap: 10px;
+    flex-direction: column-reverse;
+  }
+  .f_info {
+    color: #faf4d3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    line-height: 30px;
+    align-self: center;
+  }
+  .fspan {
+    width: 390px;
+    margin-left: -210px;
+  }
+  .sm {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .sm img {
+    cursor: pointer;
+  }
+  .sm img:hover {
+    filter: sepia(1) hue-rotate(305deg) saturate(90) brightness(1);
+  }
+  .flog {
+    height: 67px;
+  }
+}
