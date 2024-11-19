@@ -226,6 +226,9 @@ body {
   border-radius: 50px;
   cursor: pointer;
 }
+.pkat:hover{
+background-color: #d649337e;
+}
 .akat span {
   align-self: center;
 }
